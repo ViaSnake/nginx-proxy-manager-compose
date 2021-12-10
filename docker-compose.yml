@@ -10,8 +10,6 @@ services:
       - '443:443'
       # Admin Web Port:
       - '81:81'
-    networks:
-      - proxy
     environment:
       DB_SQLITE_FILE: "/data/database.sqlite"
     volumes:
