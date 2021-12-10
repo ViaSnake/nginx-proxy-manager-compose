@@ -17,11 +17,3 @@ services:
     volumes:
       - /var/nginx-proxy-manager:/data
       - /etc/letsencrypt:/etc/letsencrypt
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
-
-networks:
-  proxy:
-    driver: overlay
