@@ -11,7 +11,7 @@ services:
       # Admin Web Port:
       - '81:81'
       # Pterodactyl Daemon Port:
-      - '8443:8443'
+      #- '8443:8443'
     environment:
       DB_SQLITE_FILE: "/data/database.sqlite"
     volumes:
